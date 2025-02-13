@@ -11,4 +11,8 @@ fun main() {
 
     val result = if (num % 2 == 0) "Even Number" else "Odd Number"
     println(result)
+
+    for (i in 0 until 5) { // 0부터 4까지 반복
+        println("Count: $i")
+    }
 }
