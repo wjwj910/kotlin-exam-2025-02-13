@@ -6,4 +6,9 @@ fun main() {
 
     println("Number: $number")
     println("Message: $message")
+
+    val num = 15
+
+    val result = if (num % 2 == 0) "Even Number" else "Odd Number"
+    println(result)
 }
