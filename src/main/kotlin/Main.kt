@@ -1,8 +1,9 @@
 package org.example
 
-import Person
-
 fun main() {
-    val person1: Person = Person(25, "John")
-    person1.sayHello()
+    val number = 10 // 불변 변수 선언 (val)
+    var message = "Hello, Kotlin!" // 문자열 변수 선언
+
+    println("Number: $number")
+    println("Message: $message")
 }
