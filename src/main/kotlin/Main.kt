@@ -15,4 +15,11 @@ fun main() {
     for (i in 0 until 5) { // 0부터 4까지 반복
         println("Count: $i")
     }
+
+    val result1 = add(5,10);
+    println("Result: $result1")
+}
+
+fun add(a: Int, b: Int): Int {
+    return a + b
 }

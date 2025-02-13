@@ -17,5 +17,13 @@ public class JMain {
         for (int i = 0; i < 5; i++) {
             System.out.println("Count: " + i);
         }
+
+
+        int result = add(5, 10);
+        System.out.println("Result: " + result);
+    }
+
+    public static int add(int a, int b) {
+        return a + b;
     }
 }
