@@ -1,5 +1,8 @@
 package org.example
 
+import Person
+
 fun main() {
-    println("Hello World!")
+    val person1: Person = Person(25, "John")
+    person1.sayHello()
 }
