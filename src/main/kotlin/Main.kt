@@ -1,9 +1,9 @@
 package org.example
 
 fun main() {
-    val numbers = listOf(1, 2, 3, 4, 5, 6)
+    val names = listOf("Alice", "Bob", "Charlie")
 
-    val evenNumbers = numbers.filter { it % 2 == 0 }
+    val greetings = names.map { "Hello, $it" }
 
-    println(evenNumbers)
+    greetings.forEach(::println)
 }
