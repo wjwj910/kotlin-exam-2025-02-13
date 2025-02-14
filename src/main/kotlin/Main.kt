@@ -1,9 +1,13 @@
 package org.example
 
 fun main() {
-    val ages = mapOf("Alice" to 25, "Bob" to 30, "Charlie" to 35) // 불변 맵
-
-    for ((name, age) in ages) {
-        println("$name is $age years old.")
-    }
+    var name: String? = "HI"
+    name = "Hello"
+    // ? 붙히면 Strin 일수도 있고 null 일수도 있다.
+    name = null
+    
+    // String 이 있으면(null -> x) length 를 실행하고,
+    // 없으면 Name is null(null -> o) 을 실행하라
+    println(name?.length ?: "Name is null")
+    
 }
