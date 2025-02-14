@@ -1,13 +1,14 @@
 package org.example
 
-import java.io.File
-import java.nio.file.Files
-import java.nio.file.StandardCopyOption
-
 fun main() {
-    copy("a.txt", "a_copy.txt")
-}
+    val day = 3
 
-fun copy(source: String, target: String) {
-    Files.copy(File(source).toPath(), File(target).toPath(), StandardCopyOption.REPLACE_EXISTING)
+    val dayName = when (day) {
+        1 -> "Monday"
+        2 -> "Tuesday"
+        3 -> "Wednesday"
+        else -> "Invalid Day"
+    }
+
+    println("Day: $dayName")
 }
