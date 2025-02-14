@@ -1,10 +1,15 @@
 package org.example
 
+class Person(val name: String, val age: Int) {
+    fun getInfo() = "$name is $age years old."
+}
+
 fun main() {
-    val result = run {
-        val x = 5
-        x * 2 + 10
+    val person = Person("Alice", 30)
+
+    val info = with(person) {
+        getInfo()
     }
 
-    println("Result: $result")
+    println(info)
 }
